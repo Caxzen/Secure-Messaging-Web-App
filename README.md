@@ -129,20 +129,12 @@ To deploy the application online, use PythonAnywhere’s free tier:
 
 ## Known Limitations
 
-- Private keys are stored server-side, posing a risk if the database is accessed.
 - Limited error handling for invalid Gist URLs; warnings are shown instead of blocking messages.
 - SQLite is used, which is sufficient for small-scale use but may not scale for large user bases.
 
-## Future Improvements
-
-- **Client-Side Private Key Storage**: Prompt users to download private keys during signup and remove them from the database.
-- **Enhanced URL Validation**: Restrict `key_verification_url` to GitHub domains.
-- **Custom Domain**: Add a custom domain for a more professional URL.
-- **Rate Limiting**: Implement rate limiting to prevent abuse.
 
 ## Resources
 
-See `docs/resources.md` for external libraries and documentation used:
 - Flask: https://flask.palletsprojects.com/
 - PyCryptodome: https://pycryptodome.readthedocs.io/
 - Requests: https://requests.readthedocs.io/
